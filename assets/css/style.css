@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
 
+/* General Styling */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
+/* Navbar Styling */
 #header {
   background-color: #363561;
   position: sticky;
@@ -16,7 +19,7 @@ body {
 
 .navbar-flex {
   margin: auto;
-  max-width: 80%;
+  max-width: 87%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +27,12 @@ body {
 
 .nav-brand {
   color: white;
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand img {
+  max-width: 50px;
 }
 
 .nav-menu {
@@ -44,6 +53,81 @@ body {
   padding: 15px;
 }
 
+/* Landing Section Styling */
+#section1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 #section1 img {
-  max-width: 100%;
+  position: relative;
+  width: 100vw;
+  height: 115vh;
+  margin-bottom: 0;
+}
+
+.section1-content {
+  position: absolute;
+  top: 150px;
+  color: white;
+  padding: 20px 90px;
+}
+
+.section1-header {
+  padding-bottom: 8px;
+  font-size: 40px;
+}
+
+.section1-body {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* My Design Section Styling */
+#my-designs {
+  margin-top: 0;
+}
+
+#my-designs h2 {
+  margin-top: 0;
+  text-align: center;
+  padding: 8px;
+  font-size: 28px;
+}
+
+.my-design-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  max-width: 80%;
+}
+
+.design-flex-img img {
+  max-width: 500px;
+}
+
+.design-flex-content {
+  max-width: 450px;
+}
+
+.design-flex-content h2 {
+  color: #2a2959;
+  float: left;
+}
+
+.design-flex-content p {
+  font-weight: 700;
+  font-size: 17px;
+  clear: both;
+}
+
+.design-flex-content a {
+  text-decoration: none;
+  background-color: #2a2959;
+  color: white;
+  padding: 9px 17px;
+  border-radius: 50px;
+  font-weight: 700;
+  float: right;
 }
