@@ -35,6 +35,14 @@ body {
   max-width: 50px;
 }
 
+.navbar-flex .openMenu {
+  font-size: 2rem;
+  color: #ffe4c4;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -51,6 +59,13 @@ body {
   text-decoration: none;
   color: white;
   padding: 15px;
+}
+
+.nav-menu .closeMenu {
+  font-size: 2rem;
+  color: #ffe4c4;
+  cursor: pointer;
+  display: none;
 }
 
 /* Landing Section Styling */
@@ -130,4 +145,149 @@ body {
   border-radius: 50px;
   font-weight: 700;
   float: right;
+}
+
+/* more design button styling */
+.more-design {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.more-design a {
+  text-decoration: none;
+  background-color: #2a2959;
+  color: white;
+  padding: 10px 250px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+/* Footer Styling */
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+  background-color: #ef4871;
+  padding: 8px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+#footer .social-icon {
+  padding: 33px;
+}
+
+.social-icon span {
+  padding: 10px 15px;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.social-icon span:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Responsiveness Styling */
+@media (max-width: 1024px) {
+  .my-design-flex {
+    margin: 25px auto;
+    max-width: 85%;
+  }
+
+  .design-flex-img img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-design-flex {
+    margin: 25px auto;
+    max-width: 85%;
+    justify-content: space-between;
+  }
+
+  .design-flex-img img {
+    max-width: 250px;
+  }
+
+  .design-flex-content {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 680px) {
+  .navbar-flex {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .navbar-flex .nav-menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #2a2959;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  .nav-menu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+
+  .navbar-flex .openMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 680px) {
+  .section1-content {
+    position: absolute;
+    top: 80px;
+    color: white;
+    padding: 20px;
+  }
+
+  .my-design-flex {
+    flex-direction: column;
+  }
+
+  .design-flex-img {
+    padding: 10px;
+  }
+
+  .more-design a {
+    padding: 10px 30px;
+  }
+
+  #footer {
+    padding: 20px;
+  }
+
+  .social-icon {
+    padding: 12px;
+  }
+
+  .social-icon span {
+    font-size: 15px;
+  }
 }
