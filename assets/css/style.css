@@ -413,15 +413,55 @@ form button {
 
 @media (max-width: 425px) {
   #contact-grid {
-    grid-template-columns: 1fr;
-    max-width: 80%;
+    display: flex;
+    flex-direction: column;
   }
 
   .contact-grid-info {
-    padding: 0;
+    min-height: 20vh;
+    padding: 20px;
+  }
+
+  .contact-grid-form {
+    border: 1px solid #c4c4c4;
+    padding: 15px 0;
   }
 
   .contact-grid-form .form-grid {
     flex-direction: column;
+  }
+
+  form button {
+    background: #ef4871;
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 15px;
+    margin-left: 85px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 375px) {
+  form button {
+    background: #ef4871;
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 15px;
+    margin-left: 60px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 375px) {
+  form button {
+    background: #ef4871;
+    color: white;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 15px;
+    margin-left: 40px;
+    cursor: pointer;
   }
 }
