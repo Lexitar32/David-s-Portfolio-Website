@@ -201,7 +201,38 @@ body {
   color: black;
 }
 
-/* Contact Section Styling */
+/* About Page Styling */
+.about-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#about-details {
+  margin: 15px auto;
+  max-width: 60%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.about-details-content {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  border-bottom: 2px solid #363561;
+  margin: 10px 0;
+  padding: 12px 50px;
+}
+
+.item-1 {
+  color: #2a2959;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.item-2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Contact Page Styling */
 #contact-grid {
   display: grid;
   grid-template-columns: 2fr 4fr;
@@ -439,6 +470,22 @@ form button {
     border-radius: 15px;
     margin-left: 85px;
     cursor: pointer;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  #about-details {
+    max-width: 90%;
+  }
+
+  .about-details-content {
+    display: grid;
+    grid-template-columns: 4fr;
+    border-bottom: 2px solid #363561;
+    margin: 10px 0;
+    padding: 12px 50px;
   }
 }
 
