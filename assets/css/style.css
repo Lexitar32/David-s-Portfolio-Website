@@ -73,6 +73,10 @@ body {
   display: none;
 }
 
+.active {
+  color: #2a2959;
+}
+
 /* Landing Section Styling */
 #section1 {
   margin-bottom: 0;
@@ -175,7 +179,7 @@ body {
   padding: 15px;
 }
 
-#footer a {
+#footer .email {
   text-decoration: none;
   color: white;
   background-color: #ef4871;
@@ -188,15 +192,17 @@ body {
   padding: 33px;
 }
 
-.social-icon span {
+.social-icon span a {
+  text-decoration: none;
   padding: 10px 15px;
   font-size: 30px;
   border: 1px solid white;
   border-radius: 50%;
   margin: 15px;
+  color: white;
 }
 
-.social-icon span:hover {
+.social-icon span a:hover {
   background-color: white;
   color: black;
 }
@@ -205,6 +211,10 @@ body {
 .about-image {
   text-align: center;
   margin: 20px 0;
+}
+
+.about-image img {
+  max-width: 250px;
 }
 
 #about-details {
@@ -230,6 +240,27 @@ body {
 .item-2 {
   font-size: 18px;
   font-weight: 700;
+}
+
+#about-btn {
+  margin: 15px auto;
+  max-width: 30%;
+}
+
+.about-btn-flex {
+  display: flex;
+}
+
+.btn-1 {
+  padding: 10px;
+}
+
+.btn-1 a {
+  text-decoration: none;
+  color: white;
+  background: #2a2959;
+  padding: 10px 25px;
+  border-radius: 15px;
 }
 
 /* Contact Page Styling */
@@ -357,6 +388,12 @@ form button {
     margin-left: 30px;
     cursor: pointer;
   }
+
+  #about-btn {
+    margin: 15px auto;
+    max-width: 35%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -373,6 +410,12 @@ form button {
 
   .design-flex-content {
     max-width: 380px;
+  }
+
+  #about-btn {
+    margin: 15px auto;
+    max-width: 48%;
+    text-align: center;
   }
 }
 
@@ -491,6 +534,17 @@ form button {
     border-bottom: 1px solid #363561;
     padding: 15px 0;
   }
+
+  #about-btn {
+    margin: 15px auto;
+    max-width: 65%;
+    text-align: center;
+  }
+
+  .about-btn-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 375px) {
@@ -514,5 +568,16 @@ form button {
     border-radius: 15px;
     margin-left: 40px;
     cursor: pointer;
+  }
+
+  #about-btn {
+    margin: 15px auto;
+    max-width: 65%;
+    text-align: center;
+  }
+
+  .about-btn-flex {
+    display: flex;
+    flex-direction: column;
   }
 }
