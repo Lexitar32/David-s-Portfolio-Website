@@ -454,7 +454,7 @@ form button {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   form button {
     background: #ef4871;
     color: white;
