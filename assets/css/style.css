@@ -472,8 +472,8 @@ form button {
     cursor: pointer;
   }
 
-  .about-image {
-    display: none;
+  .about-image img {
+    max-width: 150px;
   }
 
   #about-details {
