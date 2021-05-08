@@ -486,6 +486,10 @@ form button {
 }
 
 @media (max-width: 425px) {
+  #section1 img {
+    height: 80vh;
+  }
+
   #contact-grid {
     display: flex;
     flex-direction: column;
