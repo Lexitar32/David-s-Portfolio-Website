@@ -481,11 +481,15 @@ form button {
   }
 
   .about-details-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    border-bottom: 1px solid #363561;
+    display: block;
+    border-bottom: none;
     margin: 10px 0;
     padding: 12px 50px;
+  }
+
+  .item-2 {
+    border-bottom: 1px solid #363561;
+    padding: 15px 0;
   }
 }
 
