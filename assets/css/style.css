@@ -35,6 +35,11 @@ body {
   max-width: 50px;
 }
 
+.nav-brand a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar-flex .openMenu {
   font-size: 2rem;
   color: #ffe4c4;
@@ -196,8 +201,96 @@ body {
   color: black;
 }
 
+/* Contact Section Styling */
+#contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  margin: 50px auto;
+  max-width: 70%;
+  /* border: 1px solid black; */
+}
+
+.contact-grid-info {
+  border: 1px solid black;
+  border-radius: 15px;
+  background: #2a2959;
+  color: white;
+  min-height: 65vh;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.contact-grid-info p {
+  color: #c4c4c4;
+}
+
+.info-icon span {
+  padding: 7px;
+}
+
+.info-icon a {
+  text-decoration: none;
+}
+
+.info-icon i {
+  padding: 12px;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: #ef4871;
+  background-color: white;
+  cursor: pointer;
+}
+
+.contact-grid-form {
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}
+
+.contact-grid-form .form-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+form .form-control {
+  display: block;
+  padding: 5px;
+}
+
+.form-control label {
+  color: #2a2959;
+  font-weight: bold;
+}
+
+.form-control input {
+  border: none;
+  background: #c4c4c4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.form-control textarea {
+  border: none;
+  background: #c4c4c4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+form button {
+  background: #ef4871;
+  color: white;
+  border: none;
+  padding: 12px 170px;
+  border-radius: 15px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
 /* Responsiveness Styling */
 @media (max-width: 1024px) {
+  /* Landing Page */
   .my-design-flex {
     margin: 25px auto;
     max-width: 85%;
@@ -206,9 +299,37 @@ body {
   .design-flex-img img {
     max-width: 300px;
   }
+
+  /* Contact Page */
+  #contact-grid {
+    max-width: 90%;
+  }
+
+  #contact-grid {
+    font-size: 13px;
+  }
+
+  .info-icon span {
+    padding: 3px;
+  }
+
+  .info-icon i {
+    padding: 8px;
+  }
+
+  form button {
+    background: #ef4871;
+    color: white;
+    border: none;
+    padding: 12px 155px;
+    border-radius: 15px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 768px) {
+  /* Landing Page */
   .my-design-flex {
     margin: 25px auto;
     max-width: 85%;
@@ -257,9 +378,7 @@ body {
   .navbar-flex .openMenu {
     display: block;
   }
-}
 
-@media (max-width: 680px) {
   .section1-content {
     position: absolute;
     top: 80px;
@@ -289,5 +408,20 @@ body {
 
   .social-icon span {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contact-grid {
+    grid-template-columns: 1fr;
+    max-width: 80%;
+  }
+
+  .contact-grid-info {
+    padding: 0;
+  }
+
+  .contact-grid-form .form-grid {
+    flex-direction: column;
   }
 }
