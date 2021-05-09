@@ -488,6 +488,7 @@ form button {
 @media (max-width: 425px) {
   #section1 img {
     height: 80vh;
+    max-width: 50%;
   }
 
   #contact-grid {
