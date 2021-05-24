@@ -88,6 +88,7 @@ body {
   width: 100vw;
   height: 115vh;
   margin-bottom: 0;
+  margin-top: -150px;
 }
 
 .section1-content {
