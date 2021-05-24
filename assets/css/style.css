@@ -422,7 +422,7 @@ form button {
 
 @media (max-width: 680px) {
   #section1 img {
-    margin-top: 0px;
+    margin-top: -15px;
   }
 
   .navbar-flex {
